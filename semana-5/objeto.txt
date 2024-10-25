@@ -1,0 +1,17 @@
+objetos: paradigma de orientação a objetos, A POO facilita a organização, reutilização e manutenção do código, além de promover a abstração, 
+o encapsulamento e a modularidade.
+
+características - atributos
+comportamentos - métodos
+
+Estrutura
+Combina variáveis, funções e estruturas de dados
+
+Localização
+Uma referência a um local da memória que possui um valor
+
+Atributos
+Dados que definem as características de um objeto
+
+Métodos
+Funções que realizam as operações sobre os dados de um objeto
