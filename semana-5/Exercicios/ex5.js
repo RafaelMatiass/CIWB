@@ -31,18 +31,20 @@ let produtos = [
   },
 ]
 
-let prods = produtos.filter(p => parseInt(p.Preco.replace('R$ ')) < 10);
-// let dados = [];
-// for (let prod of prods1) {
-//   dados.push(prod.Nome);
-//   dados.push(prod.Preco);
-// }
-console.log(prods);
+let prods_preco = produtos.filter(p => parseFloat(p.Preco.replace('R$', '').replace(',', '.')) < 10);
 
-prods2 = produtos.filter(p => p.Desconto == 0)
-let dados2 = [];
-for (let prod of prods2) {
-  dados2.push(prod.Nome);
-  dados2.push(prod.Preco);
+let dados_preco = [];
+for (let prod of prods_preco) {
+  dados_preco.push(prod.Nome);
+  dados_preco.push(prod.Preco);
 }
-console.log(prods2);
+
+console.log(dados_preco);
+
+prods_nome = produtos.filter(p => p.Desconto == 0)
+let dados_nome = [];
+for (let prod of prods_nome) {
+  dados_nome.push(prod.Nome);
+  dados_nome.push(prod.Preco);
+}
+console.log(dados_nome);
