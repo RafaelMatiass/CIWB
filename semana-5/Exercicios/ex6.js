@@ -31,10 +31,15 @@ let produtos = [
  },
 ]
 
-let preco = produtos.map(p => p.Preco.replace('R$ ', ''));
-// let dados = [];
-// for (let prod of prods1) {
-//   dados.push(prod.Nome);
-//   dados.push(prod.Preco);
-// }
-console.log(preco);
+let totalSemDesconto = produtos.reduce((total, p) => total + parseFloat(p.Preco.replace('R$', '').replace(',', '.')), 0);
+console.log(totalSemDesconto);
+
+let totalDesconto = 0;
+produtos.forEach(p => {
+  let preco = parseFloat(p.Preco.replace('R$', '').replace(',', '.'));
+  let desconto = p.Desconto === '0' ? 0 : (parseFloat(p.Desconto.replace('%', '')) / 100) * preco;
+  totalDesconto += desconto;
+});
+
+let totalComDesconto = totalSemDesconto - totalDesconto;
+console.log(totalComDesconto);
