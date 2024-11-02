@@ -12,30 +12,26 @@ const response = `[
 ]`;
 
 const objeto = JSON.parse(response);
-console.log(objeto);
+// console.log(objeto);ß
 
 function preencherTabela() {
+  const trPai = document.querySelector('row-2');
 
   for(let i = 0; i < objeto.length; i++) {
-    const trPai = document.getElementById('row-2');
-
     let tr = document.createElement('tr');
     let tdId = document.createElement('td');
     let tdNome = document.createElement('td');
     let tdPreco = document.createElement('td');
 
-    id = objeto[i].id;
-    tdId.value = id;
-    nome = objeto[i].nome;
-    tdNome.value = nome;
-    preco = objeto[i].preco;
-    tdPreco.value = preco;
+    tdId.textContent = objeto[i].id;
+    tdNome.textContent = objeto[i].nome;
+    tdPreco.textContent = objeto[i].preco;
 
     tr.appendChild(tdId);
     tr.appendChild(tdNome);
     tr.appendChild(tdPreco);
 
-    // tr.appendChild(trPai);
+    trPai.appendChild(tr);
   }
 }
 
