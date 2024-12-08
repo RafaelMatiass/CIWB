@@ -1,30 +1,114 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js" defer></script>
-  <link rel="stylesheet" href="" />
-  <title>Carrinho de compras</title>
-</head>
-<body>
-  <main>
-    <section id="products">
+  <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Carrinho</title>
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <main>
+      <section>
+        <h2>Carrinho</h2>
+        <div id="tabela-produtos">
+          <p>Carrinho vazio</p>
+        </div>
+      </section>
       <h2>Produtos</h2>
+      <section class="produtos">
       <ul>
-        <li class="product">
-          <div>
-            <img src="src/img/redbull.png" alt="produto">
-            <h3 class="name">Chocolate Amaro Meio amargo Unidade com 80g</h3>
-          </div>
-          <div>
-            <p class="price">R$ 4,49</p>  
-            <button class="add_product"><span class="">adicionar</span></button>
-          </div>
+        <li class="produto">
+          <img src="images/anne-frank.jpg" alt="produto">
+          <h3 class="nome">O Diário de Anne Frank - Edição de Luxo Almofadada</h3>
+          <p class="preco">R$27,02</p>
+          <button class="botao-add">Adicionar ao carrinho</button>
+        </li>
+        <li class="produto">
+          <img src="images/cinco-aneis.jpg" alt="produto">
+          <h3 class="nome">O Livro dos Cinco Anéis</h3>
+          <p class="preco">R$10,61</p>
+          <button class="botao-add">Adicionar ao carrinho</button>
+        </li>
+        <li class="produto">
+          <img src="images/bruxa-blair.jpg" alt="produto">
+          <h3 class="nome">Bruxa de Blair 2: O Livro das Sombras</h3>
+          <p class="preco">R$11,90</p>
+          <button class="botao-add">Adicionar ao carrinho</button>
+        </li>
+        <li class="produto">
+          <img src="images/garota-lago.jpg" alt="produto">
+          <h3 class="nome">A garota do lago</h3>
+          <p class="preco">R$16,92</p>
+          <button class="botao-add">Adicionar ao carrinho</button>
+        </li>
+        <li class="produto">
+          <img src="images/destroi-sonhos.jpg" alt="produto">
+          <h3 class="nome">O Deus que destrói sonhos</h3>
+          <p class="preco">R$31,18</p>
+          <button class="botao-add">Adicionar ao carrinho</button>
+        </li>
+        <li class="produto">
+          <img src="images/american.jpg" alt="produto">
+          <h3 class="nome">American Psycho</h3>
+          <p class="preco">R$11,90</p>
+          <button class="botao-add">Adicionar ao carrinho</button>
+        </li>
+        <li class="produto">
+          <img src="images/pequeno-principe.jpg" alt="produto">
+          <h3 class="nome">O Pequeno Príncipe - Edição de Luxo Almofadada</h3>
+          <p class="preco">R$17,39</p>
+          <button class="botao-add">Adicionar ao carrinho</button>
+        </li>
+        <li class="produto">
+          <img src="images/mais-esperto.jpg" alt="produto">
+          <h3 class="nome">Mais esperto que o Diabo: O mistério revelado da liberdade e do sucesso</h3>
+          <p class="preco">R$31,09</p>
+          <button class="botao-add">Adicionar ao carrinho</button>
+        </li>
+        <li class="produto">
+          <img src="images/pai-rico.jpg" alt="produto">
+          <h3 class="nome">Pai Rico, pai Pobre: Edição de 20 Anos Atualizada e Ampliada</h3>
+          <p class="preco">R$37,08</p>
+          <button class="botao-add">Adicionar ao carrinho</button>
+        </li>
+        <li class="produto">
+          <img src="images/livro-secreto.jpg" alt="produto">
+          <h3 class="nome">O livro secreto do escritor</h3>
+          <p class="preco">R$32,90</p>
+          <button class="botao-add">Adicionar ao carrinho</button>
+        </li>
+        <li class="produto">
+          <img src="images/eu.jpg" alt="produto">
+          <h3 class="nome">Eu e Esse meu Coração</h3>
+          <p class="preco">R$30,25</p>
+          <button class="botao-add">Adicionar ao carrinho</button>
+        </li>
+        <li class="produto">
+          <img src="images/revolucao-bichos.jpg" alt="produto">
+          <h3 class="nome">A revolução dos bichos: Um conto de fadas</h3>
+          <p class="preco">R$14,42</p>
+          <button class="botao-add">Adicionar ao carrinho</button>
+        </li>
+        <li class="produto">
+          <img src="images/cs-lewis.jpg" alt="produto">
+          <h3 class="nome">Trilogia Cósmica: Volume Único</h3>
+          <p class="preco">R$73,32</p>
+          <button class="botao-add">Adicionar ao carrinho</button>
+        </li>
+        <li class="produto">
+          <img src="images/biblioteca.jpg" alt="produto">
+          <h3 class="nome">A Biblioteca da Meia-Noite</h3>
+          <p class="preco">R$73,32</p>
+          <button class="botao-add">Adicionar ao carrinho</button>
+        </li>
+        <li class="produto">
+          <img src="images/cafe-com-deus.jpg" alt="produto">
+          <h3 class="nome">Café com Deus Pai 2025: Porções Diárias de Transformação</h3>
+          <p class="preco">R$74,98</p>
+          <button class="botao-add">Adicionar ao carrinho</button>
         </li>
       </ul>
-    </section>
-  </main>
-</body>
+      </section>
+    </main>
+  </body>
 </html>
